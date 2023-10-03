@@ -1,0 +1,127 @@
+:root {
+    --clr-primary: #000000;
+    --clr-secondary: #ffff;
+    --clr-action: #ffff;
+
+    --bg-clr-primary: #ffff;
+    --bg-clr-secondary: #c9c9c9;
+    --bg-clr-action: #000000;
+
+    --fs-heading: 4rem;
+    --fs-title: 2rem;
+    --fs-regular: 1.3rem;
+
+    --fw-heading: 700;
+    --fw-title: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-clr-primary);
+    font-family: Roboto;
+    scroll-behavior: smooth;
+
+}
+
+body, html {
+    width: 100vw;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+header .logo-link {
+    display: flex;
+    color: var(--clr-primary); 
+    width: auto;
+    height: 2.5rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-link img {
+    width: 2rem;
+    height: 1.4rem;
+}
+
+.logo-link h3 {
+    width: 10rem;
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-medium);
+    text-align: center;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    display: inherit;
+    color: var(--clr-primary);
+    height: 2rem;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    padding: 0.2rem 0.8rem;
+}
+
+.nav-primary-div {
+    display: inherit;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-secondary-div {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-secondary-div .nav-sign-up {
+    color: var(--clr-action);
+    background-color: var(--bg-clr-action);
+    border-radius: 0.5rem;
+
+}
+
+nav .products-content {
+    display: none;
+}
+
+nav .solutions-lists {
+    display: none;
+}
+
+nav .templates-lists {
+    display: none;
+}
+
+nav .integrations-comps {
+    display: none;
+}
+
+nav .resources-and-support {
+    display: none;
+}

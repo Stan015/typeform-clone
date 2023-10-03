@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Epilogue:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
     <title>Typeform clone: People-Friendly Forms & Surveys</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div>
+        <a href="#" class="logo-link">
             <img src="images/logo-hide.png" alt="logo-hide">
-            <h3 class="logo">Typeform clone</h3>
-        </div>
+            <h3>Typeform clone</h3>
+        </a>
 
         <nav>
             <div class="nav-primary-div">
@@ -109,6 +115,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="templates-primary-div">
                     <a href="#" class="templates">Templates <img src="images/icon-arrow-down.svg" alt="arrow-down-3"></a>
                     <!-- templates lists -->
@@ -233,10 +240,10 @@
                 <a href="#">Pricing</a>
             </div>
 
-            <ul class="nav-ul-2">
-                <li>Log in</li>
-                <li>Sign up</li>
-            </ul>
+            <div class="nav-secondary-div">
+                <a href="#">Log in</a>
+                <a href="#" class="nav-sign-up">Sign up</a>
+            </div>
         </nav>
     </header>
 
@@ -409,7 +416,7 @@
     </section>
 
     <footer>
-        <div class="first-footer-div">
+        <div class="first-ftr-general-div">
             <div>
                 <h2>PRODUCT</h2>
                 <a>Pricing</a>
@@ -461,6 +468,8 @@
                     <li><a href="#">Educational templates</a></li>
                 </ul>
             </div>
+
+            <div>
                 <h2>INTEGRATIONS</h2>
      
                 <a>Popular integration apps <img src="images/icon-arrow-down.svg" alt="arrow-down"></a>
@@ -497,29 +506,69 @@
                     <li><a href="#">Rewards Integration</a></li>
                     <li><a href="#">Collaboration Integration</a></li>
                 </ul>
-                <!-- last edit -->
-                <a>More app categories <img src="images/icon-arrow-down.svg" alt="arrow-down"></a>
-                <ul class="ftr-more-app-categories">
-                    <li><a href="#">Customer Support Integration</a></li>
-                    <li><a href="#">Automation Integration</a></li>
-                    <li><a href="#">Documents Integration</a></li>
-                    <li><a href="#">Rewards Integration</a></li>
-                    <li><a href="#">Collaboration Integration</a></li>
-                </ul>
-
-                <a>More app categories <img src="images/icon-arrow-down.svg" alt="arrow-down"></a>
-                <ul class="ftr-more-app-categories">
-                    <li><a href="#">Customer Support Integration</a></li>
-                    <li><a href="#">Automation Integration</a></li>
-                    <li><a href="#">Documents Integration</a></li>
-                    <li><a href="#">Rewards Integration</a></li>
-                    <li><a href="#">Collaboration Integration</a></li>
-                </ul>
-            <div>
-
             </div>
-            <div></div>
-            <div></div>
+
+            <div class="ftr-resources">
+
+                <h2>RESOURCES</h2>
+
+                <a>Blog</a>
+                <a>Help center</a>
+                <a>Community</a>
+                <a>Tutorials</a>
+                <a>FAQs</a>
+                <a>Affiliates <img src="images/icon-arrow-down.svg" alt="arrow-down"></a>
+                <ul class="ftr-rsr-affiliates">
+                    <li><a href="#">Affiliate program</a></li>
+                    <li><a href="#">Typeform startups</a></li>
+                </ul>
+                <a>Tech partners</a>
+                <a>System status</a>
+                <a>Developers / API</a>
+            </div>
+ 
+            <div class="ftr-get-to-us">
+
+                <h2>GET TO KNOW US</h2>
+
+                <a>About us</a>
+                <a>Contact us</a>
+                <a>News</a>
+                <a>Terms & conditions <img src="images/icon-arrow-down.svg" alt="arrow-down"></a>
+                <ul class="ftr-terms-and-cond">
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">NFIR</a></li>
+                </ul>
+                <a>Typeform (es)</a>
+                <a>Newsletter</a>
+                <a><img src="images/facebook-logo.png" alt="facebook-logo"></a>
+                <a><img src="images/twitter-logo.png" alt="twitter-logo"></a>
+                <a><img src="images/instagram-logo.png" alt="instagram-logo"></a>
+                <a><img src="images/youtube-logo.png" alt="youtube-logo"></a>
+                <a><img src="images/linkedin-logo.png" alt="linkedin-logo"></a>
+            </div>
+        </div>
+
+        <div class="second-ftr-general-div">
+            <p>
+                <img src="images/location-icon.svg" alt="location-icon"> 
+                With love, from Barcelona
+            </p>
+
+            <div class="language-selection">
+                <img src="images/world-icon.svg" alt="world-icon"> 
+                <select name="language" id="language" title="language">
+                    <option value="English">English</option>
+                    <option value="Español">Español</option>
+                </select>
+            </div>
+
+            <p><a href="#">Cookie Settings</a> - <a href="#">Check our Cookie Policy to delete cookies</a></p>
+
+            <p>
+                <img src="images/copyright-icon.svg" alt="copyright-icon"> 
+                Typeform
+            </p>
         </div>
     </footer>
 
