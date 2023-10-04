@@ -9,10 +9,12 @@
 
     --fs-heading: 4rem;
     --fs-title: 2rem;
-    --fs-regular: 1.3rem;
+    --fs-regular: 1rem;
+    --fs-nav-regular: 0.8rem;
+    --fs-logo-regular: 1.3rem;
 
-    --fw-heading: 700;
-    --fw-title: 600;
+    --fw-heading: 500;
+    --fw-title: 500;
     --fw-medium: 500;
     --fw-regular: 400;
 
@@ -21,25 +23,27 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--bg-clr-primary);
     font-family: Roboto;
     scroll-behavior: smooth;
-
+    /* overflow: scroll; */
+    /* border: 2px solid red; */
 }
 
-body, html {
+body {
     width: 100vw;
+    background-color: var(--bg-clr-primary);
 
 }
 
 header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 5rem;
-    padding: 0 1.5rem;
+    position: fixed;
+    background-color: #fffffffb;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    z-index: 3;
 
 }
 
@@ -50,6 +54,7 @@ header .logo-link {
     height: 2.5rem;
     align-items: center;
     text-decoration: none;
+    margin-left: 1.5rem;
 }
 
 .logo-link img {
@@ -59,7 +64,7 @@ header .logo-link {
 
 .logo-link h3 {
     width: 10rem;
-    font-size: var(--fs-regular);
+    font-size: var(--fs-logo-regular);
     font-weight: var(--fw-medium);
     text-align: center;
     text-decoration: none;
@@ -68,8 +73,9 @@ header .logo-link {
 
 nav {
     display: flex;
-    width: 100%;
     height: inherit;
+    gap: 0.5rem;
+    position: relative;
     align-items: center;
     justify-content: space-between;
 }
@@ -77,6 +83,8 @@ nav {
 nav a {
     display: inherit;
     color: var(--clr-primary);
+    font-size: var(--fs-nav-regular);
+    font-weight: var(--fw-regular);
     height: 2rem;
     text-decoration: none;
     text-align: center;
@@ -84,20 +92,27 @@ nav a {
     padding: 0.2rem 0.8rem;
 }
 
-.nav-primary-div {
-    display: inherit;
-    gap: 1.2rem;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .nav-secondary-div {
     display: flex;
-    gap: 1.2rem;
+    width: 10rem;
+    gap: 1rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+
 }
 
+.nav-secondary-div a {
+    display: inherit;
+    color: var(--clr-primary);
+    font-size: var(--fs-nav-regular);
+    font-weight: var(--fw-regular);
+    height: 2rem;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    padding: 0.2rem 0.8rem;
+}
 
 .nav-secondary-div .nav-sign-up {
     color: var(--clr-action);
@@ -124,4 +139,33 @@ nav .integrations-comps {
 
 nav .resources-and-support {
     display: none;
+}
+
+.hero-section {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5rem;
+    
+}
+
+.hero-section .hero-video {
+    position: relative;
+}
+
+.hero-section .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.hero-section .hero-text h2 {
+    color: var(--clr-primary);
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-heading);
+   
 }
