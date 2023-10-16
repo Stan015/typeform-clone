@@ -654,6 +654,92 @@ nav .resources-and-support {
 }
 
 footer {
-    position: relative;
-    top: 4rem;
+    display: block;
+    color: var(--clr-secondary);
+    width: 100%;
+    background-color: #1b1b1b;
+
+}
+
+footer a {
+    color: var(--clr-action);
+    text-decoration: none;
+
+}
+
+footer a:not(:has(img)):hover {
+    transform: translateX(0.6rem);
+    transition: 200ms ease;
+
+}
+
+footer ul {
+    display: none;
+    margin-left: 1rem;
+}
+
+footer li {
+    color: var(--clr-action);
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer li:hover {
+    transform: translateX(0.6rem);
+    transition: 200ms ease;
+}
+
+.first-ftr-general-div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 4rem 4rem;
+    justify-items: center;
+}
+
+.ftr-product, .ftr-templates, .ftr-integrations, .ftr-resources, .ftr-get-to-us {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.first-ftr-general-div h3 {
+    color: var(--clr-secondary);
+    font-size: var(--fs-sub-title-2);
+    font-weight: var(--fw-regular);
+    padding-bottom: 2rem;
+}
+
+.first-ftr-general-div .ftr-get-to-us .ftr-social-media {
+    width: 2rem;
+    height: 2rem;
+}
+
+.ftr-arrow-down {
+    width: 0.6rem;
+    height: 0.4rem;
+}
+
+.second-ftr-general-div {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 4rem;
+    border-top: 0.1rem solid #ffff;
+}
+
+.second-ftr-general-div .language-selection {
+    display: inherit;
+    gap: 0.5rem;
+}
+
+.second-ftr-general-div .language-selection select {
+    color: var(--clr-secondary);
+    background-color: #1b1b1b;
+    border: none;
+}
+
+.second-ftr-general-div .language-selection select:hover {
+    color: #b9b6b6;
 }
