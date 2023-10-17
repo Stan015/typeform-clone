@@ -42,14 +42,13 @@ body {
 
 header {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
     position: fixed;
     background-color: #fffffffd;
     justify-content: space-between;
     align-items: center;
     z-index: 3;
-
 }
 
 header .logo-link {
@@ -126,23 +125,169 @@ nav a {
 
 }
 
-nav .products-content {
+/* styling the dropdown of product nav link */
+.nav-products-div {
+    display: inherit;
+}
+
+.nav-products-div .products-content {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 27rem;
+    top: 5rem;
+    left: -23rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffffffb;
+    z-index: 3;
+}
+
+.nav-products-div .products-content h4 {
+    color: var(--clr-primary);
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+}
+
+.nav-products-div .products-content p {
+    color: var(--clr-primary);
+    font-size: var(--fs-nav-regular);
+    font-weight: var(--fw-regular);
+}
+
+.nav-products-div .products-content div {
+    display: flex;
+    position: relative;
+    /* top: 2rem; */
+}
+
+.nav-products-div .products-content div a:has(img) {
+    display: inherit;
+    flex-direction: column;
+    height: 14rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-products-div .products-content div a img {
+    height: 13rem;
+    width: 14rem;
+    transition: 200ms ease;
+}
+
+.nav-products-div .products-content div a:hover img {
+    width: 15rem;
+}
+
+.nav-products-div .products-content .products-div-1 {
+    height: inherit;
+    width: 15rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    top: 2.5rem;
+}
+
+.nav-products-div .products-content .products-div-2 {
+    height: inherit;
+    width: 15rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    top: 2.5rem;
+}
+
+.nav-products-div .products-content .products-div-3 {
+    height: 18rem;
+    width: 15rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    gap: 1rem;
+    border-left: 0.1rem solid #b9b6b6;
+    top: 2.5rem;
+}
+
+.nav-products-div .products-content .products-div-3  .video-ask {
+    display: inherit;
+    flex-direction: column;
+    height: 3rem;
+    justify-content: center;
+}
+
+.nav-products-div .products-content .products-div-3  .typeform-labs {
+    display: inherit;
+    flex-direction: column;
+    height: 3rem;
+    justify-content: center;
+}
+/*  */
+
+/* styling the dropdown of solutions nav link */
+.nav-solutiions-primary-div {
+    display: inherit;
+}
+
+.nav-solutiions-primary-div .solutions-lists {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 27rem;
+    top: 5rem;
+    left: -23rem;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffffffb;
+    z-index: 3;
+}
+
+.nav-solutiions-primary-div .solutions-lists div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    position: relative;
+    top: 2.5rem;
+}
+
+.nav-solutiions-primary-div .solutions-lists a {
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0rem;
+    margin-top: 1rem;
+}
+/*  */
+
+/* styling the dropdown of templates nav links */
+.templates-primary-div {
+    display: inherit;
+}
+
+.templates-primary-div .templates-lists {
     display: none;
 }
 
-nav .solutions-lists {
+.integrations-pr-div {
+    display: inherit;
+}
+
+.integrations-pr-div .integrations-comps {
     display: none;
 }
 
-nav .templates-lists {
-    display: none;
+.resources-and-support-pr-div {
+    display: inherit;
 }
 
-nav .integrations-comps {
-    display: none;
-}
-
-nav .resources-and-support {
+.resources-and-support-pr-div .resources-and-support {
     display: none;
 }
 
@@ -652,6 +797,7 @@ nav .resources-and-support {
     background-color: #000000;
 
 }
+/*  */
 
 footer {
     display: block;
