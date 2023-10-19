@@ -1,4 +1,4 @@
-const navLink = document.querySelector(".nav-products-div");
+const navLink = document.querySelector(".products");
 const arrowDown = document.getElementById("nav-arrow-down");
 const navProduct = document.querySelector(".products-content");
 
@@ -12,13 +12,13 @@ const arrowRotate = () => {
 
     });
 
-    // navLink.addEventListener('mouseout', function() {
-    //     arrowDown.classList.remove("arrow-rotate");
+    navProduct.addEventListener('mouseleave', function() {
+        arrowDown.classList.remove("arrow-rotate");
 
-    //     if (navProduct.style.display = "flex") {
-    //         navProduct.style.display = "none";
-    //     };
-    // });
+        if (navProduct.style.display = "flex") {
+            navProduct.style.display = "none";
+        };
+    });
 }
 arrowRotate();
 
