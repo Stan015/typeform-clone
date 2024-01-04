@@ -659,6 +659,11 @@ nav {
     padding: 1rem;
 }
 
+.contents .workflow-int div img {
+    width: 6rem;
+    height: 6rem;
+}
+
 .contents .workflow-int div:first-child {
     display: flex;
     flex-direction: column;
